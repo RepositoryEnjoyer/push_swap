@@ -6,7 +6,7 @@
 /*   By: cmaurici <cmaurici@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 13:41:38 by cmaurici          #+#    #+#             */
-/*   Updated: 2022/09/18 14:40:17 by cmaurici         ###   ########.fr       */
+/*   Updated: 2022/09/20 17:21:29 by cmaurici         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,20 @@ int	tiniestnbr_pos(t_data *info)
 		pos++;
 	}
 	return (-1);
+}
+
+int	is_nbr_biggest(int nbr, t_data *info)
+{
+	int	pos;
+
+	pos = 0;
+	while (pos < info->sa_size)
+	{
+		if (nbr < info->stk_a[pos])
+			return (0);
+		pos++;
+	}
+	return (1);
 }
 
 int	is_nbr_tiniest(int nbr, t_data *info)

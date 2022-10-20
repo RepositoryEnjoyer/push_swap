@@ -6,7 +6,7 @@
 /*   By: cmaurici <cmaurici@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 12:51:53 by cmaurici          #+#    #+#             */
-/*   Updated: 2022/09/18 14:29:28 by cmaurici         ###   ########.fr       */
+/*   Updated: 2022/09/20 19:44:27 by cmaurici         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ typedef struct s_data
 	int		size;
 	int		sa_size;
 	int		sb_size;
-	int		close;
-	int		index;
+	int		na;
+	int		nb;
 	int		*sorted;
 	int		*alg_calc;
 	int		*stk_a;
@@ -69,9 +69,20 @@ int			stk_a_comparator(t_data *info);
 int			stk2sort_comparator(t_data *info);
 int			tiniestnbr_pos(t_data *info);
 int			is_nbr_tiniest(int nbr, t_data *info);
+int			is_nbr_biggest(int nbr, t_data *info);
 void		firstposing_tiniest(t_data *info);
+void		push_smallest_half(t_data *info);
+int			calc_num_pos(t_data *info);
+void		min_move(int ib, t_data *info);
+void		calibrations(int ib, int ia, t_data *info);
+int			first_dates(int ib, t_data *info);
+int			index_call(int ib, int ia, t_data *info);
 void		sorting_3(t_data *info);
 void		sorting_4(t_data *info);
 void		sorting_5(t_data *info);
+void		sorting_100(t_data *info);
+void		sorting_100plus(t_data *info);
+void		no_zero(int ib, int ia, t_data *info);
+void		yes_some(int ib, int ia, t_data *info);
 
 #endif

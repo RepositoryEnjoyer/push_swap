@@ -6,11 +6,11 @@
 /*   By: cmaurici <cmaurici@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 16:46:18 by cmaurici          #+#    #+#             */
-/*   Updated: 2022/09/20 19:48:50 by cmaurici         ###   ########.fr       */
+/*   Updated: 2022/09/22 12:59:30 by cmaurici         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "../includes/checker.h"
 
 static int	dup_checker(char *c, char **is_valid)
 {
