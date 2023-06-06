@@ -12,6 +12,8 @@ This is a project that focuses on sorting a stack of integers using a limited se
 
 1.- Clone the repository.
 
+    git clone git@github.com:RepositoryEnjoyer/push_swap.git
+
 2.- Compile it through the 'make' rule. (The Makefile will handle everything)
 
     make
